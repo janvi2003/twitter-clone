@@ -1,7 +1,19 @@
+import Sidebar from "components/Sidebar";
+import Head from "next/head";
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="">
+      <Head>
+        <title>Twitter </title>
+        <link rel="icon" href="favicon.ico" />
+      </Head>
+      <main className="bg-black min-h-screen flex max-w-[1500px] mx-auto" >
+        <Sidebar />
+        {/*feed */}
+        {/* widgets*/}
+        {/*modal */}
+      </main>
+    </div>
   )
 }
